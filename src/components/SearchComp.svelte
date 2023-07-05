@@ -78,7 +78,8 @@
 					>Search</span
 				>
 				<button class="absolute z-30 top-1/2 -translate-y-1/2 right-2"
-					><Icon
+				on:click={handleSubmit}	
+				><Icon
 						icon="zondicons:search"
 						height={20}
 					/></button
