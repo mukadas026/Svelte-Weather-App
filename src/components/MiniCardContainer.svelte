@@ -4,7 +4,7 @@
 	import MiniCard from "./MiniCard.svelte"
 
 	const getForcast = async () => {
-		const api_key = import.meta.env.VITE_APP_API_KEY
+		const api_key = import.meta.env.VITE_API_KEY
 		try {
 			const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${$loc}`)
 			// console.log(res)

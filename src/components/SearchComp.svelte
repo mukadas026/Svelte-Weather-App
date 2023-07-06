@@ -17,7 +17,7 @@
 	const handleSubmit = async (e) => {
 		$search = false
 		loading = true
-		const api_key = import.meta.env.VITE_APP_API_KEY
+		const api_key = import.meta.env.VITE_API_KEY
 		try {
 			const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${$loc}`)
 			console.log(res.status, res.statusText)
